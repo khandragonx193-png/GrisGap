@@ -1,0 +1,70 @@
+/* --- 1. Thiết lập giao diện nền cơ bản --- */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-top: 40px;
+    color: #2c3e50;
+    border-left: 5px solid #2980b9;
+    padding-left: 10px;
+    font-size: 20px;
+}
+
+.sub-text {
+    font-style: italic;
+    color: #666;
+    margin: 5px 0 15px 15px;
+}
+
+/* --- 2. Định dạng CSS Grid --- */
+
+/* Cấu hình chung cho cả 2 khối Grid */
+.grid-container {
+    display: grid;
+    background-color: #e2e8f0;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+/* Ví dụ 1: 2 cột bằng nhau, khoảng cách chung là 20px */
+.grid-ex1 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px; /* Định dạng khoảng cách bằng nhau */
+}
+
+/* Định dạng riêng cho các ô bên trong Ví dụ 1 */
+.grid-ex1 div {
+    background-color: lightblue;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #3498db;
+    border-radius: 4px;
+}
+
+/* Ví dụ 2: 3 cột bằng nhau, hàng cách 30px, cột cách 10px */
+.grid-ex2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px 10px; /* Hàng cách 30px, Cột cách 10px */
+}
+
+/* Định dạng riêng cho các ô bên trong Ví dụ 2 */
+.grid-ex2 div {
+    background-color: lightgreen;
+    padding: 25px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #2ecc71;
+    border-radius: 4px;
+}
